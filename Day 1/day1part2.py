@@ -1,4 +1,4 @@
-# Advent of Code Day 1 Part 2
+# Advent of Code 2021 Day 1 Part 2
 # Author: Thomas Hart
 
 def count_increasing_windows(file):
