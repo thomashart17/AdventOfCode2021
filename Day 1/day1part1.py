@@ -1,4 +1,4 @@
-# Advent of Code 2021 Day 1
+# Advent of Code 2021 Day 1 Part 1
 # Author: Thomas Hart
 
 def count_increasing(file):
@@ -6,7 +6,7 @@ def count_increasing(file):
         vals = f.readlines()
     count = 0
     for i in range(1, len(vals)):
-        if vals[i] > vals[i - 1]:
+        if int(vals[i]) > int(vals[i - 1]):
             count += 1
     return count
 
