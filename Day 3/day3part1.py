@@ -5,10 +5,10 @@ def calc_gamma_epsilon(file):
     with open(file) as f:
         vals = f.readlines()
     bit_count = []
-    for i in range(len(vals[0])-1):
+    for i in range(len(vals[0]) - 1):
         bit_count.append(0)
     for val in vals:
-        for i in range(len(val)-1):
+        for i in range(len(val) - 1):
             bit_count[i] += int(val[i])
     gamma = ""
     epsilon = ""
