@@ -10,4 +10,5 @@ def count_increasing(file):
             count += 1
     return count
 
-print(count_increasing("input.txt"))
+if __name__ == "__main__":
+    print(count_increasing("input.txt"))

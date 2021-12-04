@@ -32,7 +32,8 @@ def calc_winner(file):
                 for k in range(5):
                     if int(boards[i][j][k]) == int(n):
                         boards[i][j][k] = False
-            if (check_win(boards[i])):
+            if check_win(boards[i]):
                 return sum_board(boards[i])*int(n)
 
-print(calc_winner("input.txt"))
+if __name__ == "__main__":
+    print(calc_winner("input.txt"))

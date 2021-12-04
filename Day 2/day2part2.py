@@ -18,5 +18,6 @@ def calc_position(file):
             aim -= int(command[1])
     return x, y
 
-x, y = calc_position("input.txt")
-print(x*y)
+if __name__ == "__main__":
+    x, y = calc_position("input.txt")
+    print(x*y)

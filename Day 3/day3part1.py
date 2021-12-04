@@ -23,5 +23,6 @@ def calc_gamma_epsilon(file):
     epsilon = int(epsilon, 2)
     return gamma, epsilon        
 
-gamma, epsilon = calc_gamma_epsilon("input.txt")
-print(gamma*epsilon)
+if __name__ == "__main__":
+    gamma, epsilon = calc_gamma_epsilon("input.txt")
+    print(gamma*epsilon)

@@ -32,5 +32,6 @@ def calc_oxygen_co2(file):
             break
     return int(oxygen[0], 2), int(co2[0], 2)
 
-oxygen, co2 = calc_oxygen_co2("input.txt")
-print(oxygen*co2)
+if __name__ == "__main__":
+    oxygen, co2 = calc_oxygen_co2("input.txt")
+    print(oxygen*co2)

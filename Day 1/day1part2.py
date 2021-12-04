@@ -13,4 +13,5 @@ def count_increasing_windows(file):
         prev = val
     return count
 
-print(count_increasing_windows("input.txt"))
+if __name__ == "__main__":
+    print(count_increasing_windows("input.txt"))
