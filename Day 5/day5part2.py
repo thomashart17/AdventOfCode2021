@@ -1,11 +1,7 @@
-# Advent of Code 2021 Day 5 Part 1
+# Advent of Code 2021 Day 5 Part 2
 # Author: Thomas Hart
 
-def horizontal(y1, y2):
-    return y1 == y2
-
-def vertical(x1, x2):
-    return x1 == x2
+from day5part1 import horizontal, vertical
 
 def calc_points(file):
     with open(file) as f:
@@ -24,6 +20,15 @@ def calc_points(file):
         elif vertical(val[0], val[2]):
             for i in range(min(int(val[1]), int(val[3])), max(int(val[1]), int(val[3])) + 1):
                 grid[i][int(val[0])] += 1
+        else:
+            x_pos = int(val[0])
+            y_pos = int(val[1])
+            x_dif = -1 if int(val[2]) < int(val[0]) else 1
+            y_dif = -1 if int(val[3]) < int(val[1]) else 1
+            while (x_pos != int(val[2]) + x_dif):
+                grid[y_pos][x_pos] += 1
+                x_pos += x_dif
+                y_pos += y_dif
     count = 0
     for line in grid:
         for val in line:
