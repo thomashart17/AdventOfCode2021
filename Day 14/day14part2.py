@@ -51,7 +51,6 @@ def calc_most_least_common(file):
         else:
             counts[keys[i][0]] = final_state[i]
         print(counts)
-    counts[polymer[0]] += 1
     counts[polymer[-1]] += 1
     print(counts)
     least = 0
